@@ -1,0 +1,4 @@
+beans\ciclovida\DepuracionListener.class
+beans\backing\VacanteForm.class
+beans\helper\FacesContextHelper.class
+beans\model\Candidato.class

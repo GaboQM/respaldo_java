@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Id:" for="id" />
+                    <h:inputText id="id" value="#{controladorCoches.coche.id}" title="Id" />
+                    <h:outputLabel value="Marca:" for="marca" />
+                    <h:inputText id="marca" value="#{controladorCoches.coche.marca}" title="Marca" />
+                    <h:outputLabel value="Modelo:" for="modelo" />
+                    <h:inputText id="modelo" value="#{controladorCoches.coche.modelo}" title="Modelo" />
+                    <h:outputLabel value="Anio:" for="anio" />
+                    <h:inputText id="anio" value="#{controladorCoches.coche.anio}" title="Anio" />
+                    <h:commandButton value="ok" action="#{controladorCoches.crearCoche()}"></h:commandButton>
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+
